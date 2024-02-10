@@ -1,0 +1,31 @@
+/* Styles for the hero section*/
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+/*style for the logo container with semi transparent background*/
+.logo-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+}
+
+/*Style for form container*/
+.signup-form-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*Style for the form itself*/
+.signup-form {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
