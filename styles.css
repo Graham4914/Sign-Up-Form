@@ -1,31 +1,72 @@
-/* Styles for the hero section*/
-.hero {
+/* Base styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* font-family: Arial, sans-serif;  */
+}
+
+@font-face {
+  font-family: 'NorseBold';
+  src: url('fonts/Norse-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Now you can use it in your CSS */
+.hero-heading {
+  font-family: 'NorseBold', sans-serif; /* Fallback to sans-serif in case NorseBold doesn't load */
+  color: white;
+  font-size: 45px;
+  line-height: 16px;
+}
+
+/* Container styles */
+.container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
+  min-height: 100vh; /* Ensure it takes at least the full viewport height */
+}
+
+/* Hero section styles */
+.hero {
+  background-image: url('halie-west-25xggax4bSA-unsplash.jpg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  position: relative;
-  color: white;
-}
-/*style for the logo container with semi transparent background*/
-.logo-container {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  text-align: center;
-}
-
-/*Style for form container*/
-.signup-form-container {
+  flex: 1; /* Adjust the flex value as necessary */
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-/*Style for the form itself*/
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  text-align: center;
+  width: 100%;
+
+  margin-top: 200px;
+}
+
+.logo-container img {
+  max-height: 125px;
+}
+
+/* Sign Up Form container styles */
+.signup-form-container {
+  flex: 2; /* Adjust the flex value as necessary */
+  padding: 2em; /* Add padding as needed */
+}
+
+/* Sign Up Form styles */
 .signup-form {
-  width: 50%;
-  padding: 20px;
-  box-sizing: border-box;
+  /* Add form styles here */
+}
+
+/* Optional Footer styles */
+footer {
+  text-align: center;
+  padding: 1em;
 }
