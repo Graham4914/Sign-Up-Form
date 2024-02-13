@@ -1,10 +1,14 @@
 /* Base styles */
+/* * {
+  border-style: solid;
+  border-color: red;
+} */
 body,
 html {
   margin: 0;
   padding: 0;
   height: 100%;
-  /* font-family: Arial, sans-serif;  */
+  font-family: Arial, sans-serif;
 }
 
 @font-face {
@@ -56,17 +60,83 @@ html {
 
 /* Sign Up Form container styles */
 .signup-form-container {
+  display: flex;
+  flex-direction: column;
   flex: 2; /* Adjust the flex value as necessary */
-  padding: 2em; /* Add padding as needed */
+  justify-content: space-evenly;
+  padding: 1px;
+  background-color: whitesmoke;
+}
+/*Form Side styles*/
+.signup-intro {
+  justify-content: center;
+  align-items: center;
 }
 
+.signup-intro h2 {
+  padding: 0 50px 0 20px;
+}
 /* Sign Up Form styles */
-.signup-form {
-  /* Add form styles here */
+
+.form-group-container {
+  display: flex;
+  background-color: white;
+}
+/* .signup-form {
+  
+} */
+/* Add form styles here */
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }
 
-/* Optional Footer styles */
-footer {
-  text-align: center;
-  padding: 1em;
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 20px;
+  margin-left: 40px;
 }
+.form-group:last-child {
+  margin-right: 0;
+}
+
+.form-content-container {
+  background: white;
+  margin: 40px 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.form-content-container h2 {
+  margin: 20px 40px;
+}
+
+.form-group input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  position: relative;
+  background-color: green;
+  color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  width: 150px;
+  padding: 15px;
+  border-radius: 4px;
+  margin: 0 40px;
+  font-size: 16px;
+}
+
+.login-link {
+  margin: 0 40px;
+}
+/* Optional Footer styles */
