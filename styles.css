@@ -84,9 +84,7 @@ html {
   display: flex;
   background-color: white;
 }
-/* .signup-form {
-  
-} */
+
 /* Add form styles here */
 
 .form-row {
@@ -127,17 +125,22 @@ input {
 }
 
 input:focus {
-  text-decoration: double;
-  border: 1px solid red !important;
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-button {
+.signup-form {
   position: relative;
+}
+button {
+  position: absolute;
+  bottom: -120px;
   background-color: #596d48;
   color: white;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
   width: 200px;
-  padding: 10px;
+  padding:  10px;
   border-radius: 8px;
   margin: 40px;
   font-size: 18px;
@@ -145,4 +148,20 @@ button {
 
 .login-link {
   margin: 0 40px;
+  position: absolute;
+  bottom:  -140px;
 }
+.italic {
+  font-style: italic;
+}
+ input.error {
+  border: 2px solid red;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+ }
+ input.match {
+  border: 2px solid green;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+ }
+ .create-account-container {
+  min-height: 200px;
+ }
